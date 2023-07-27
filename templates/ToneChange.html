@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tone Changer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img class="logo" src="/static/images/logo.png" alt="Logo">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="title">Content Tone & Style Modifier</h1>
+    <div class="container">
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="model">Select AI Model</label>
+                <select class="form-control" id="model" name="model">
+                    <option>gpt-3.5-turbo-16k-0613</option>
+                    <option>gpt-4-0613</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="api_key">Insert API Key *</label>
+                <input type="text" class="form-control" id="api_key" name="api_key" required>
+                <small class="error text-danger" style="display: none;"></small>
+            </div>
+            <div class="form-group">
+                <label for="inputText">Enter Input Text to Edit</label>
+                <textarea class="form-control" id="inputText" name="inputText" maxlength="5000"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="inputAuthorText">Enter Tone to Mimic</label>
+                <textarea class="form-control" id="inputAuthorText" name="inputAuthorText" maxlength="5000"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="selectOutputFormat">Select Output Format</label>
+                <select class="form-control" id="selectOutputFormat" name="selectOutputFormat">
+                    <option value="Long Text">Long Text</option>
+                    <option value="Tweet">Tweet</option>
+                    <option value="Custom">Custom</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="customInstruction">Custom Instruction</label>
+                <textarea class="form-control" id="customInstruction" name="customInstruction" maxlength="100"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

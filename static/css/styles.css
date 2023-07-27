@@ -1,0 +1,106 @@
+body {
+    background-color: #f4f4f4;
+}
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    padding: 0 20px;
+    margin-left: 100px;
+    padding-right: 20px;
+}
+
+.nav-item{
+    padding: 0 20px;
+    margin-right: 100px;
+}
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.container_review {
+    max-width: 800px;
+    margin: 100px auto;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container_results {
+    max-width: 800px;
+    margin: 150px auto;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    margin-top: 20px;    /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-right: 20px;  /* Adjust as needed */
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.uploadTitle {
+    margin-top: 20px;    /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-right: 20px;  /* Adjust as needed */
+    font-size: 20px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.form-field input {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
+
+.form-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;  /* adjust as per your requirement for the button size */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;    /* Adjust as needed */
+    width: 100%;
+
+}
+
+.logo {
+    width: 70px;  /* Adjust as needed */
+    margin-left: 150px;
+    height: auto;  /* This will maintain the aspect ratio of the logo */
+}
